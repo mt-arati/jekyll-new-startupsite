@@ -1,0 +1,24 @@
+
+	<section class="aboutus-sec section-space lightbg" id="foursteps">
+		<div class="container">
+			<div class="row">
+				<div class="column">
+					<div class="head text-center">
+						<h2>First among others</h2>
+						<p>There are many reasons to get down and start to get depressed about your situation. </p>
+					</div>
+				</div>
+			</div>
+			<div class="row aboutbox-row">
+				{% for item in site.data.four-steps %}
+                     <div class="column-3">
+                         <div class="aboutus-col">
+							<h5>{{ item.title }}</h5>
+							<p>{{ item.description }}</p>
+							<a href="#" class="link">{{ item.shortdesc }}</a>
+                         </div>
+                     </div>
+                  {% endfor %}
+			</div>
+		</div>
+	</section>

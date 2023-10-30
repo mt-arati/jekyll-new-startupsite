@@ -1,0 +1,12 @@
+- name: Melissa Morillo
+  position: CO-Founder
+  description: Although this is well intentioned and the goal certainly is to reduce the quantity of these bothersome thoughts, the technique is inherently flawed.
+  image_path: assets/img/user-img.png
+- name: Tallah Cotton
+  position: Manager
+  description: What happened a few moments or several years ago is gone, what will happen this evening.
+  image_path: assets/img/user-img.png
+- name: Stephanus Huggins
+  position: Designer
+  description: Requiring the individual to remember what not to think of infers that they have already thought it.
+  image_path: assets/img/user-img.png

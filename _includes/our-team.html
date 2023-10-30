@@ -1,0 +1,30 @@
+<section class="team-sec section-space">
+		<div class="container">
+			<div class="row">
+				<div class="column">
+					<div class="head text-center">
+						<h2>Our team</h2>
+						<p>Failure will never overtake me if my determination to succeed is strong enough. </p>
+					</div>
+					<div class="team-img text-center">
+						<img src="{{ site.baseurl }}assets/img/team-img.jpg" alt="team">
+					</div>
+				</div>
+			</div>
+			<div class="team-row row">
+                 {% for item in site.data.team %}
+                     <div class="column-4">
+                         <div class="client-info">
+                            <div class="client-img">
+                                <img src="{{ item.image_path }}" class="user" width="65" height="65" alt="user"> 
+                            </div>
+                            <div class="client-txt">
+                                <h6>{{ item.name }}</h6>
+                                <span>{{ item.position }}</span>
+                            </div>
+                        </div>
+                     </div>
+                  {% endfor %} 
+			</div>
+		</div>
+	</section>

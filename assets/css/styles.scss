@@ -1,0 +1,10 @@
+---
+# Only the main Sass file needs front matter, rest is included from site.sass.sass_dir
+---
+@charset "utf-8";
+
+@import "layout/variables.scss";
+@import "layout/global.scss";
+@import "layout/header.scss";
+@import "layout/footer.scss";
+@import "layout/custom.scss";

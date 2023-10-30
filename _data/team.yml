@@ -1,0 +1,18 @@
+- name: Igor Antonovich
+  position: CEO
+  image_path: assets/img/user-img.png
+- name: Hemchandra Chakravorty
+  position: CO-Founder
+  image_path: assets/img/user-img.png
+- name: Harrison Phillips
+  position: Designer
+  image_path: assets/img/user-img.png
+- name: Rahul Malviya
+  position: Web developer
+  image_path: assets/img/user-img.png
+- name: Marama Petera
+  position: Web developer
+  image_path: assets/img/user-img.png
+- name: Jesus Bañuelos
+  position: Designer
+  image_path: assets/img/user-img.png

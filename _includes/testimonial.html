@@ -1,0 +1,40 @@
+<section class="testimonials-sec section-space lightbg">
+		<div class="container">
+			<div class="row">
+				<div class="column">
+					<div class="head text-center">
+						<h2>Testimonials</h2>
+					</div>
+				</div>
+				<div class="column">
+					<div class="swiper-container testimonial-innerslider">
+                        <div class="swiper-wrapper">    
+                            {% for item in site.data.testimonial %}
+                                 <div class="swiper-slide">
+                                     <div class="testimonial-box">
+                                        <div class="testimonial-txt">
+                                            <p>{{ item.description }}</p>
+                                            <div class="client-info">
+                                                <div class="client-img">
+                                                    <img src="{{ item.image_path }}" class="client-1" width="65" height="65" alt="pexels1"> 
+                                                </div>
+                                                <div class="client-txt">
+                                                    <h6>{{ item.name }}</h6>
+                                                    <span>{{ item.position }}</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                 </div>
+                              {% endfor %} 
+                        </div>
+                        <div class="swiper-arrow">
+                        	<div class="swiper-button-next"></div>
+    						<div class="swiper-button-prev"></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</section>

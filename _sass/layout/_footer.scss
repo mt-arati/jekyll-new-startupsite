@@ -1,0 +1,112 @@
+
+.site-footer {
+	border: none;
+	padding: 5vw 0 2vw;
+}
+.footer-col-wrapper {
+	flex: 1 1 auto;
+	.column {
+		flex: 1 1;
+		.footer-col {
+			width: 100%;
+			p {
+				color: $secondary-color;
+				text-align: left;
+			}
+			ul.social-media-list {
+				display: flex;
+				align-items: center;
+				list-style:none; 
+				li {
+					margin-right: clamp(0.625rem, 0.6250rem + 0.0000vw, 0.625rem);
+					img {
+						width: clamp(1.25rem, 1.2500rem + 0.0000vw, 1.25rem);
+						&:hover {
+							opacity: 0.6;
+						}
+					}
+				}
+			}
+			ul.fmenu {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+				li {
+					a {
+						color: $secondary-color;
+						&:hover {
+							color: $primary-color;
+						}
+					}
+					margin-bottom: clamp(0.7rem, 0.7rem + 0.0000vw, 0.7rem);
+					text-align: left;
+				}
+			}
+			form {
+				input {
+					height: clamp(2.875rem, 2.8750rem + 0.0000vw, 2.875rem);
+					border: 1px solid #CAD1E1;
+					padding-left: clamp(0.625rem, 0.6250rem + 0.0000vw, 0.625rem);
+					border-radius: 5px;
+					color: $secondary-color;
+					font-size: clamp(1rem, 1.0000rem + 0.0000vw, 1rem);
+					width: clamp(8.875rem, 8.8750rem + 0.0000vw, 8.875rem);
+					&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+						color:  $light-btn;
+					  }
+					&::-moz-placeholder { /* Firefox 19+ */
+						color:  $light-btn;
+					  }
+					&:-ms-input-placeholder { /* IE 10+ */
+						color:  $light-btn;
+					  }
+					&:-moz-placeholder { /* Firefox 18- */
+						color:  $light-btn;
+					  }
+				}
+				display: flex;
+				align-items: center;
+				button.btn {
+					min-width: auto;
+					height: clamp(2.875rem, 2.8750rem + 0.0000vw, 2.875rem);
+					margin-left: clamp(0.625rem, 0.6250rem + 0.0000vw, 0.625rem);
+					cursor: pointer;
+					background-color:transparent;
+					&:hover{
+						background: $primary-color;
+					}
+				}
+			}
+		}
+		ul.address {
+			list-style: none;
+			padding: 0;
+			li {
+				display: flex;
+				span {
+					margin-right: clamp(0.625rem, 0.6250rem + 0.0000vw, 0.625rem);
+					min-width: clamp(1.5rem, 1.5rem + 0.0000vw, 1.5rem);
+				}
+				a {
+					color: $primary-color;
+					&:hover {
+						color: $light-btn;
+					}
+				}
+			}
+		}
+	}
+    @media (max-width: 767px) {
+        .column {
+			.footer-col {
+				margin-bottom: 5vw;
+			}
+		}
+		flex-direction: column-reverse;
+    }
+    @media (max-width: 480px) {
+        .column {
+            .footer-col {margin-bottom: 8vw;}
+        }
+    }
+}
