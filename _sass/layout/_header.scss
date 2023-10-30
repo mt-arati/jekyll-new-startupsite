@@ -88,8 +88,8 @@
 		}
 		.site-nav {
 			position: absolute;
-			top: 9px;
-			right: 15px;
+			top: 1.7vw;
+			right: 4.5vw;
 			background-color: #fdfdfd;
 			border: 1px solid #e8e8e8;
 			border-radius: 5px;
@@ -97,18 +97,18 @@
 			label[for=nav-trigger] {
 				display: block;
 				float: right;
-				width: 36px;
-				height: 36px;
+				width: clamp(2.25rem, 2.2500rem + 0.0000vw, 2.25rem);
+				height: clamp(2.25rem, 2.2500rem + 0.0000vw, 2.25rem);
 				z-index: 2;
 				cursor: pointer;
 			}
 			.menu-icon {
 				display: block;
 				float: right;
-				width: 36px;
-				height: 26px;
+				width: clamp(2.25rem, 2.2500rem + 0.0000vw, 2.25rem);
+				height: clamp(1.625rem, 1.6250rem + 0.0000vw, 1.625rem);
 				line-height: 0;
-				padding-top: 10px;
+				padding-top: clamp(0.625rem, 0.6250rem + 0.0000vw, 0.625rem);
 				text-align: center;
 				> svg {
 					fill: #424242;
@@ -124,8 +124,8 @@
 			}
 			.page-link {
 				display: block;
-				padding: 5px 10px;
-				margin-left: 20px;
+				padding: clamp(0.313rem, 0.3130rem + 0.0000vw, 0.313rem) clamp(0.625rem, 0.6250rem + 0.0000vw, 0.625rem);
+				margin-left: clamp(1.25rem, 1.2500rem + 0.0000vw, 1.25rem);
 				&:not(:last-child) {
 					margin-right: 0;
 				}

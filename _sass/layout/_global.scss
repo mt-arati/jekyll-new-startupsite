@@ -154,14 +154,14 @@ input {
 		flex-shrink: 0;
 		width: 100%;
 		max-width: 100%;
-		padding-right: calc(1.5rem * .5);
-		padding-left: calc(1.5rem * .5);
+		padding-right: clamp(0.75rem, 0.7500rem + 0.0000vw, 0.75rem);
+		padding-left: clamp(0.75rem, 0.7500rem + 0.0000vw, 0.75rem);
 		margin-top: var(--bs-gutter-y);
 	}
 }
 .column {
-	padding-right: calc(1.5rem * .5);
-	padding-left: calc(1.5rem * .5);
+	padding-right: clamp(0.75rem, 0.7500rem + 0.0000vw, 0.75rem);
+	padding-left: clamp(0.75rem, 0.7500rem + 0.0000vw, 0.75rem);
 	flex: 0 0 auto;
 }
 .column-12 {
