@@ -136,7 +136,7 @@ input {
         max-width: 80vw !important;
     }
     @media (min-width: 1200px) {
-        max-width: 72vw !important;
+        max-width: 80vw !important;
     }
     @media (min-width: 1400px) {
         max-width: 68.7500vw !important;
@@ -178,6 +178,9 @@ input {
 }
 .column-4 {
 	width: 22.7vw;
+	@media (max-width: 1400px) {
+		width: 26vw;
+	}
     @media (max-width: 991px) {
         width: 50vw;
     }
@@ -187,6 +190,9 @@ input {
 }
 .column-3 {
 	width: 17vw;
+	@media (max-width: 1400px) {
+		width: 20vw;
+	}
     @media (max-width: 1120px) {
         width: 20vw;
     }
